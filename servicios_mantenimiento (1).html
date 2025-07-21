@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servicios Profesionales y Mantenimiento</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: black;
+    }
+    header {
+      background-color: #FFA500;
+      color: black;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    header img {
+      height: 60px;
+      margin-right: 1rem;
+    }
+    header .title-nav {
+      flex: 1;
+      text-align: center;
+    }
+    nav a {
+      color: black;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+    .hero {
+      background-color: #f5f6fa;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .hero h1 {
+      margin-bottom: 1rem;
+    }
+    section {
+      padding: 2rem;
+    }
+    .services h2, .about h2, .contact h2 {
+      color: #FFA500;
+    }
+    .service-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .service-item {
+      flex: 1 1 45%;
+      background-color: #f1f2f6;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    form {
+      max-width: 600px;
+      margin: auto;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #FFA500;
+      color: black;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #FFA500;
+      color: black;
+      font-size: 0.9rem;
+      text-align: center;
+      padding: 1rem 2rem;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      text-decoration: none;
+      z-index: 1000;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    }
+    .social-links {
+      margin-top: 1rem;
+    }
+    .social-links a {
+      margin: 0 10px;
+      color: black;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <img src="https://via.placeholder.com/60" alt="Logo">
+    <div class="title-nav">
+      <h1>Servicios Profesionales y Mantenimiento</h1>
+      <nav>
+        <a href="#servicios">Servicios</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#cotizacion">Cotización</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero">
+    <h1>Soluciones confiables para hogares y empresas en Pichincha</h1>
+    <p>Reparaciones, instalaciones y asesorías técnicas profesionales.</p>
+  </div>
+
+  <section id="servicios" class="services">
+    <h2>Servicios</h2>
+    <div class="service-list">
+      <div class="service-item">
+        <h3>Mantenimiento General</h3>
+        <ul>
+          <li>Reparaciones eléctricas y plomería</li>
+          <li>Instalación de equipos (aires, cámaras, alarmas)</li>
+          <li>Pintura y remodelaciones menores</li>
+          <li>Limpieza y desinfección</li>
+          <li>Mantenimiento preventivo empresarial</li>
+        </ul>
+      </div>
+      <div class="service-item">
+        <h3>Servicios Profesionales</h3>
+        <ul>
+          <li>Consultoría técnica (seguridad, climatización, etc.)</li>
+          <li>Diseño Contraincendios</li>
+          <li>Supervisión de obras e instalaciones</li>
+          <li>Inspecciones técnicas</li>
+          <li>Asesorías personalizadas</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="nosotros" class="about">
+    <h2>Sobre Nosotros</h2>
+    <p>
+      Somos un equipo profesional con experiencia en mantenimiento, instalación y consultoría técnica. Atendemos en la provincia de Pichincha, ofreciendo servicios confiables y personalizados para hogares y empresas.
+    </p>
+  </section>
+
+  <section id="cotizacion">
+    <h2>Solicita una Cotización</h2>
+    <form>
+      <input type="text" placeholder="Nombre completo" required />
+      <input type="email" placeholder="Correo electrónico" required />
+      <input type="text" placeholder="Teléfono o WhatsApp" required />
+      <textarea placeholder="Describe el servicio que necesitas..." required></textarea>
+      <button type="submit">Enviar solicitud</button>
+    </form>
+  </section>
+
+  <section id="contacto" class="contact">
+    <h2>Contacto</h2>
+    <p>Email: contacto@tuservicio.com</p>
+    <p>WhatsApp: +593 999 999 999</p>
+    <p>Ubicación: Provincia de Pichincha, Ecuador</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Servicios Profesionales y Mantenimiento. Todos los derechos reservados.</p>
+    <div class="social-links">
+      <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/593999999999" class="whatsapp-float" target="_blank" title="Chatea con nosotros">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</body>
+</html>
